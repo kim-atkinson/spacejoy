@@ -66,19 +66,26 @@
           padding-right: 30px !important;
         }
 
-        .h1 {
-          font-size: 36px !important;
-          line-height: 48px !important;
-          padding-right: 30px !important;
+        .top_story {
           padding-left: 30px !important;
-          padding-top: 30px !important;
+          padding-right: 30px !important;
+        }
+
+        .top_picks {
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+        }
+
+        .h1 {
+          font-size: 28px !important;
+          line-height: 36px !important;
+          padding-top: 20px !important;
         }
 
         .h2 {
-          font-size: 18px !important;
-          line-height: 27px !important;
-          padding-right: 30px !important;
-          padding-left: 30px !important;
+          font-size: 28px !important;
+          line-height: 36px !important;
+          padding-top: 20px !important;
         }
 
         .p {
@@ -88,6 +95,7 @@
           padding-right: 30px !important;
           padding-bottom: 30px !important;
         }
+        
 
         .CTA_wrap {
           padding-left: 30px !important;
@@ -114,20 +122,24 @@
           padding-left: 30px !important;
           padding-right: 30px !important;
         }
+      }
 
-        .stack {
-          display: block !important;
-          width: 100% !important;
+      @media screen and (max-width: 468px) {
+        .h1 {
+          font-size: 24px !important;
+          line-height: 32px !important;
+          padding-left:  0px !important;
+          padding-right: 0px !important;
+          padding-top: 14px !important;
         }
 
-        .spacer {
-          display: block !important;
-          min-height: 20px !important;
+        .h2 {
+          font-size: 24px !important;
+          line-height: 32px !important;
+          padding-left:  0px !important;
+          padding-right: 0px !important;
+          padding-top: 14px !important;
         }
-        /* .two_column_image {
-			width: 100% !important;
-			height: auto !important;
-		} */
       }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -157,7 +169,7 @@
     <![endif]-->
 
     <!-- // FULL EMAIL -->
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
       <tr>
         <!-- // LEFT SPACER CELL *** MUST HAVE A BACKGROUND COLOUR -->
         <td bgcolor="#eeeeee" style="font-size: 0px">&zwnj;</td>
@@ -176,16 +188,16 @@
                   align="center"
                   bgcolor="#ffffff"
                   style="
-                    padding-top: 42px;
+                    padding-top: 30px;
                     padding-right: 50px;
-                    padding-bottom: 42px;
+                    padding-bottom: 30px;
                     padding-left: 50px;
                   "
                 >
-                  <img
+                  <img class="logo_icon"
                     src="https://uploads-ssl.webflow.com/6192739adc1f696165b66e9f/6199411fa841876856a7544a_space-joy-logo-green.png"
                     alt="spacejoy logo"
-                    width="300"
+                    width="55%"
                     height="auto"
                   />
                 </td>
@@ -193,7 +205,7 @@
 
               <!-- TOP STORY BLOCK -->
               <tr>
-                <td
+                <td class="top_story"
                   bgcolor="#ffffff"
                   style="
                     padding-top: 0;
@@ -202,7 +214,7 @@
                     padding-left: 50px;
                   "
                 >
-                  <table>
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                     <tr>
                       <td>
                         <img
@@ -214,7 +226,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td
+                      <td class="h1"
                         style="
                           font-size: 28px;
                           line-height: 36px;
@@ -241,6 +253,7 @@
                           cellspacing="0"
                           cellpadding="0"
                           align="left"
+                          role="presentation"
                         >
                           <!-- BUTTON START-->
                           <tr>
@@ -257,11 +270,11 @@
                               "
                             >
                               <a
-                                href="#"
+                                href="https://www.kimberleyatkinson.com" target="_blank"
                                 style="
                                   color: #073b3a;
                                   font-size: 14px;
-                                  font-weight: 700;
+                                  font-weight: 500;
                                   letter-spacing: 1px;
                                   text-align: center;
                                   text-decoration: none;
@@ -302,16 +315,17 @@
                     cellspacing="0"
                     cellpadding="0"
                     align="center"
+                    role="presentation"
                   >
                     <!-- // ROW HOLDING THREE CELLS -->
                     <tr>
                       <!-- // LEFT CELL -->
                       <td
-                        class="stack"
-                        width="240px"
+                 
+                        width="48%"
                         style="display: inline-block"
                       >
-                        <table>
+                        <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                           <tr>
                             <td style="padding-bottom: 16px">
                               <img
@@ -328,7 +342,7 @@
                           <tr>
                             <td>
                               <a
-                                href="#"
+                                href="https://www.kimberleyatkinson.com" target="_blank"
                                 style="color: #073b3a; font-size: 14px"
                                 >Read More</a
                               >
@@ -340,8 +354,7 @@
 
                       <!-- // MIDDLE SPACER CELL -->
                       <td
-                        class="spacer"
-                        width="20px"
+                        width="4%"
                         style="display: inline-block"
                       >
                         &nbsp
@@ -350,11 +363,10 @@
 
                       <!-- // RIGHT CELL -->
                       <td
-                        class="stack"
-                        width="240px"
+                        width="48%"
                         style="display: inline-block"
                       >
-                        <table>
+                        <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                           <tr>
                             <td style="padding-bottom: 16px">
                               <img
@@ -371,7 +383,7 @@
                           <tr>
                             <td>
                               <a
-                                href="#"
+                                href="https://www.kimberleyatkinson.com" target="_blank"
                                 style="color: #073b3a; font-size: 14px"
                                 >Read More</a
                               >
@@ -390,7 +402,7 @@
 
               <!-- TOP PICKS START -->
               <tr>
-                <td
+                <td class="top_picks"
                   style="
                     padding-top: 32px;
                     padding-right: 50px;
@@ -399,9 +411,9 @@
                     background-color: #ccd9dc;
                   "
                 >
-                  <table>
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                     <tr>
-                      <td>Today's Top Picks</td>
+                      <td style="font-weight: 500; text-transform: uppercase;padding-bottom: 10px;">Today's Top Picks</td>
                     </tr>
                     <tr>
                       <td>
@@ -415,6 +427,7 @@
                     </tr>
                     <tr>
                       <td
+                        class="h2"
                         style="
                           font-size: 28px;
                           line-height: 36px;
@@ -440,6 +453,7 @@
                           cellspacing="0"
                           cellpadding="0"
                           align="left"
+                          role="presentation"
                         >
                           <!-- BUTTON START-->
                           <tr>
@@ -456,11 +470,11 @@
                               "
                             >
                               <a
-                                href="#"
+                                href="https://www.kimberleyatkinson.com" target="_blank"
                                 style="
                                   color: #073b3a;
                                   font-size: 14px;
-                                  font-weight: 700;
+                                  font-weight: 500;
                                   letter-spacing: 1px;
                                   text-align: center;
                                   text-decoration: none;
@@ -484,7 +498,7 @@
               <!-- // FOOTER -->
 
               <tr>
-                <td
+                <td class="footer"
                   style="
                     background-color: #073b3a;
                     padding-top: 32px;
@@ -494,21 +508,21 @@
                   "
                   align="center"
                 >
-                  <table>
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                     <tr>
-                      <td align="center">
+                      <td align="center" style="padding-bottom: 20px;">
                         <img
                           src="https://uploads-ssl.webflow.com/6192739adc1f696165b66e9f/6199411e41cc10d80a495bd6_spacejoy-logo-white.png"
                           alt="spacejoy logo"
-                          width="151"
+                          width="40%"
                           height="auto"
                         />
                       </td>
                     </tr>
                     <tr>
-                      <td
+                      <td 
                         align="center"
-                        style="color: #ffffff; font-size: 12px"
+                        style="color: #ffffff; font-size: 12px;line-height: 12px;padding-bottom: 10px;"
                       >
                         © 2021 SpaceJoy Inc. All Rights Reserved.
                       </td>
@@ -516,7 +530,7 @@
                     <tr>
                       <td
                         align="center"
-                        style="color: #ffffff; font-size: 12px"
+                        style="color: #ffffff; font-size: 12px;line-height: 20px;padding-bottom: 20px;"
                       >
                         500 King Street West, Suite 600, Toronto, ON, M5V 1L8,
                         Canada
@@ -524,9 +538,9 @@
                     </tr>
                     <tr>
                       <td align="center">
-                        <table>
+                        <table border="0" cellspacing="0" cellpadding="0" role="presentation">
                           <tr>
-                            <td>
+                            <td style="padding-right: 15px;">
                               <img
                                 src="https://uploads-ssl.webflow.com/6192739adc1f696165b66e9f/6199411edc3203d7556aa8d2_facebook-white.png"
                                 alt=""
@@ -534,7 +548,7 @@
                                 height="auto"
                               />
                             </td>
-                            <td>
+                            <td style="padding-right: 15px;">
                               <img
                                 src="https://uploads-ssl.webflow.com/6192739adc1f696165b66e9f/6199411fc58d9ae28f451e1e_twitter-white.png"
                                 alt=""
@@ -582,7 +596,7 @@
                 <a
                   class="apppleLinksGrey"
                   style="text-decoration: underline; color: #919191"
-                  href="{$unsubscribe"
+                  href="https://www.kimberleyatkinson.com" target="_blank"
                   >here</a
                 >.
               </td>
