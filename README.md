@@ -1,6 +1,6 @@
 # SpaceJoy Newsletter
 
-Design and build for an online home decor magazine. The newsletter has two goals: drive users to the website and encourage purchases from partners. This content is highlighted with single-columns and button-style CTAs. 
+Email design and build for an online home decor magazine. The newsletter has two goals: drive users to the website and encourage purchases from partners. This content is highlighted with single-columns and button-style CTAs. 
 
 Tech Stack: Figma, HTML, CSS
 
